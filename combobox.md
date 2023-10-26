@@ -138,29 +138,35 @@ A good analogy for what this document will result in looking like is the [Tabs r
 ![Blank diagram - Page 1 (1)](https://github.com/sudheer-gowrigari/explainers/assets/11438997/e9690696-4e20-4bb4-8e9e-30f5286c560d)
 
 
-1. <combobox>: The root container that encapsulates the entire combobox structure. It provides context for the interaction between the input and the listbox.
-    1. **Slots**:
-        1. input
-        2. Listbox
-    2. **Attributes**:
-        3. **multiple**: Allows multiple options to be selected.
-        4. **search**: Indicates the combobox will actively fetch results based on user input.
-        5. **filter**: Indicates the combobox will narrow down visible options based on user input.
-2. <input type=selectlist>: This is where the user can type input or view the selected option. It acts as the trigger to display the listbox.
+1. `<combobox>`: The root container that encapsulates the entire `combobox` structure. It provides context for the interaction between the `input` and the `listbox`.
+
+   a. Slots:
+        i. input
+        ii. Listbox
+   
+   b. Attributes:
+   
+        i. **multiple**: Allows multiple options to be selected.
+   
+        ii. **search**: Indicates the combobox will actively fetch results based on user input.
+   
+        iii. **filter**: Indicates the combobox will narrow down visible options based on user input.
+   
+3. `<input type=selectlist>`: This is where the user can type input or view the selected option. It acts as the trigger to display the listbox.
     3. **Slots**:
         6. **placeholder** (optional): To display hint text when the input is empty.
-        7. **selectedoption** (optional): To display the current selected option from the listbox. ???
-3. <listbox>: This container holds the selectable options. It's hidden by default and is displayed when the <input type=selectlist> is activated.
+        7. **selectedoption** (optional): To display the currently selected option from the `listbox`. ???
+4. `<listbox>`: This container holds the selectable options. It's hidden by default and is displayed when the `<input type=selectlist>` is activated.
     4. **Slots**:
         8. **option**
         9. **optgroup** (optional)
-4. <option>: Represents an individual selectable item within the listbox.
-5. <optgroup> (Optional): A container to group related options together.
+5. `<option>`: Represents an individual selectable item within the `listbox`.
+6. `<optgroup>` (Optional): A container to group related options together.
     5. **Slots**:
         10. **legend**: To label the group.
         11. **option**: The options within this group.
     6. 
-6. <legend> (Optional, within <optgroup>): Provides a label or title for a group of options within the listbox.
+7. `<legend>` (Optional, within `<optgroup>`): Provides a label or title for a group of options within the `listbox`.
 
 
 ##### Default Behavior
