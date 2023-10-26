@@ -6,7 +6,6 @@
 Last Updated:
 
 
-
 1. Background and scope of this document
 2. Overview of Combo-box
 3. Recommended anatomy for version 1
@@ -24,27 +23,27 @@ Last Updated:
 
 #### Background
 
-From the early days of the web, form controls have been pivotal in creating interactive and dynamic user experiences. Elements like <input>, <button>, and <select> were foundational, offering basic interactivity. As the web matured, so did the demands of web designers and developers. They sought more versatile and customizable controls to cater to a myriad of designs and functionalities.
+From the early days of the web, form controls have been pivotal in creating interactive and dynamic user experiences. Elements like `<input>`, `<button>`, and `<select>` were foundational, offering basic interactivity. As the web matured, so did the demands of web designers and developers. They sought more versatile and customizable controls to cater to a myriad of designs and functionalities.
 
-The <select> element, for instance, while functional, lacks flexibility. It offers limited customization, which often leads developers to craft their own solutions. These custom implementations, while visually appealing, often come at the cost of performance, reliability, and most importantly, accessibility.
+The `<select>` element, for instance, while functional, lacks flexibility. It offers limited customization, which often leads developers to craft their own solutions. These custom implementations, while visually appealing, often come at the cost of performance, reliability, and most importantly, accessibility.
 
-Recognizing these limitations, the [<selectlist>](https://open-ui.org/components/selectlist/) was introduced. This element builds on the foundation of the <select> but provides greater flexibility. The <selectlist> lets developers create a button-triggered dropdown with customizable appearance and behavior. Paired with <listbox>, and inclusive of <option> and <optgroup>, it offers a modern, adaptable, yet accessible web control.
+Recognizing these limitations, the [`<selectlist>`](https://open-ui.org/components/selectlist/) was introduced. This element builds on the foundation of the `<select>` but provides greater flexibility. The `<selectlist>` lets developers create a button-triggered dropdown with customizable appearance and behavior. Paired with `<listbox>`, and inclusive of `<option>` and `<optgroup>`, it offers a modern, adaptable, yet accessible web control.
 
-Right now, many websites have their own type of **'combobox'**, but they're all a bit different. We often see a mix of <input> fields and <datalist> elements trying to do the job, but it's not quite perfect. By creating a standard**<code> <combobox></code></strong>, we're aiming to simplify things. 
+Right now, many websites have their own type of **'combobox'**, but they're all a bit different. We often see a mix of `<input>` fields and `<datalist>` elements trying to do the job, but it's not quite perfect. By creating a standard **`<combobox>`**, we're aiming to simplify things. 
 
-This proposal for <combobox> builds upon the strengths of <selectlist> and <listbox>. It aims to offer a control that is versatile for developers, intuitive for users, and, above all, accessible to all.
+This proposal for `<combobox>` builds upon the strengths of `<selectlist>` and `<listbox>`. It aims to offer a control that is versatile for developers, intuitive for users, and, above all, accessible to all.
 
 By standardizing such elements, we hope to bridge the gap between design demands and the need for performant, reliable, and accessible web controls. 
 
 
 #### Scope of this document
 
-This document aims to provide a complete view of combo-box utilisation across the web to inform a potential proposal within Open UI. The goal of this document is to propose a very basic anatomy to simplify the initial shipment of <combobox> (or some other name) in the web platform. It will heavily build upon selectlist but provide a better accessible and extensible solution than that of an input bound with datalist.
+This document aims to provide a complete view of combo-box utilisation across the web to inform a potential proposal within Open UI. The goal of this document is to propose a very basic anatomy to simplify the initial shipment of `<combobox>` (or some other name) in the web platform. It will heavily build upon `selectlist` but provide a better accessible and extensible solution than that of an `input` bound with `datalist`.
 
 
 #### Out of scope of this document
 
-This document will not be attempting some of the complex scenarios found across the web that leverage various ways in which to represent multi-selected options. Additionally, it does not intend to cover the addition of options that are not available in a <listbox>. It will not cover multi-select but will leverage the resolutions defined by selectlist.
+This document will not be attempting some of the complex scenarios found across the web that leverage various ways in which to represent multi-selected options. Additionally, it does not intend to cover the addition of options that are not available in a `<listbox>`. It will not cover multi-select but will leverage the resolutions defined by `selectlist`.
 
 A good analogy for what this document will result in looking like is the [Tabs research document.](https://open-ui.org/components/tabs.research.parts/)
 
@@ -74,9 +73,9 @@ A good analogy for what this document will result in looking like is the [Tabs r
 
 
 
-* You can't achieve multi-select with <datalist>:
-* grouping options or adding icons next to options, the <datalist> approach falls short.
-* Inconsistent Browser Support: While most modern browsers support <datalist>, the appearance and behavior can be inconsistent across different browsers.
+* You can't achieve multi-select with `<datalist>`:
+* grouping options or adding icons next to options, the `<datalist>` approach falls short.
+* Inconsistent Browser Support: While most modern browsers support `<datalist>`, the appearance and behavior can be inconsistent across different browsers.
 
 
 #### Approach 2
@@ -97,13 +96,13 @@ A good analogy for what this document will result in looking like is the [Tabs r
 
 
 
-* Leveraging the existing <selectlist>
+* Leveraging the existing `<selectlist>`
 
 **Cons:**
 
 
 
-* Need to rely on an opt-in attribute(combobox) to modify the behavior of <selectlist>.
+* Need to rely on an opt-in attribute(`combobox`) to modify the behavior of `<selectlist>`.
 
 
 #### Approach 3 (Recommended)
@@ -124,25 +123,19 @@ A good analogy for what this document will result in looking like is the [Tabs r
 
 
 
-* Clear Semantics: The <combobox> element explicitly conveys its purpose.
+* Clear Semantics: The `<combobox>` element explicitly conveys its purpose.
 
 **Cons:**
 
 
 
-* Introducing new element, <combobox>
+* Introducing new element, `<combobox>`
 
 
-##### Anatomy of <combobox>:
+### Anatomy of `<combobox>`:
 
 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
-
+![Blank diagram - Page 1 (1)](https://github.com/sudheer-gowrigari/explainers/assets/11438997/e9690696-4e20-4bb4-8e9e-30f5286c560d)
 
 
 1. <combobox>: The root container that encapsulates the entire combobox structure. It provides context for the interaction between the input and the listbox.
