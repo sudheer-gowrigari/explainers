@@ -137,7 +137,7 @@ To keep this doc focused on the initial recommended approach, we've separated th
 
 ### Anatomy of `<combobox>`:
 
-<img src="images/image24.png" alt="Anatomy of combobox" style="width:75%;">
+<img src="images/image24.png" alt="Anatomy of combobox" style="width:55%;">
 
 
 1. `<combobox>`: The root container that encapsulates the entire `combobox` structure. It provides context for the interaction between the `input` and the `listbox`.
@@ -227,10 +227,7 @@ The introduction of the `filter` _bool_ attribute revolutionizes the way users i
 </combobox>
 ```
 
-
-<center><img src="images/image2.png" alt="Anatomy of combobox" style="width:30%;border: 1px solid grey;">
-
-E.g: Type 'A' to quickly filter to 'Apple' and 'Apricot'.
+![freeform](https://github.com/sudheer-gowrigari/explainers/assets/11438997/e2f3f811-4783-4ce2-b343-3a5594b32841) E.g: Type 'A' to quickly filter to 'Apple' and 'Apricot'.
 </center>
 
 
@@ -259,7 +256,7 @@ The current behavior of `<selectlist>` is the _startswith_ value
     </listbox>
 </combobox>
 ```
-
+![combo-search](https://github.com/sudheer-gowrigari/explainers/assets/11438997/c5132f5c-4d5b-484b-a147-f78fbf7c9cc4)
 
 
 ### Introduction of `multiple` attribute
