@@ -217,7 +217,7 @@ The introduction of the `filter` _bool_ attribute revolutionizes the way users i
 
 ```
 <combobox filter>
-    <input type="selectlist" placeholder="Type to filter...">
+    <input type="selectlist" placeholder="Select fruit">
     <listbox>
         <option>Apple</option>
         <option>Apricot</option>
@@ -247,7 +247,7 @@ The current behavior of `<selectlist>` is the _startswith_ value
 
 ```
 <combobox search>
-    <input type="selectlist" placeholder="Type to search...">
+    <input type="selectlist" placeholder="Select fruit">
     <listbox>
        <option>Apple</option>
         <option>Apricot</option>
