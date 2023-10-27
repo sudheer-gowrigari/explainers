@@ -47,9 +47,6 @@ This document will not be attempting some of the complex scenarios found across 
 
 A good analogy for what this document will result in looking like is the [Tabs research document.](https://open-ui.org/components/tabs.research.parts/)
 
-### Combobox Research
-
-To keep this doc focused on the initial recommended approach, we've separated the research for parts and examples into another document that can be [found here](combobox-research.md)
 
 ### Recommended anatomy for version 1
 
@@ -267,3 +264,7 @@ TBD
 ### Keyboard Behavior
 
 TBD : [https://www.w3.org/WAI/ARIA/apg/patterns/combobox/](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/) 
+
+## Research
+
+To keep this doc focused on the initial recommended approach, we've separated the research for parts and examples into another document that can be [found here](combobox-research.md)
