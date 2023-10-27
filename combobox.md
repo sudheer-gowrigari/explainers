@@ -1,6 +1,5 @@
 ## NOTE: THIS DOCUMENT IS IN EARLY DRAFT AND UNDER HEAVY REVISION
 
-
 ## Combobox Explainer
 
 Last Updated:
