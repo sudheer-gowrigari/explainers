@@ -50,64 +50,6 @@ A good analogy for what this document will result in looking like is the [Tabs r
 
 ### Recommended anatomy for version 1
 
-
-#### Approach 1
-
-
-```
-<input type="text" list="browsers"  />
-<datalist id="browsers">
-	<option>firefox</option>
-	<option>Chrome</option>
-</datalist>
-```
-
-
-**Pros:**
-
-
-
-* Native elements
-
-**Cons:**
-
-
-
-* You can't achieve multi-select with `<datalist>`:
-* grouping options or adding icons next to options, the `<datalist>` approach falls short.
-* Inconsistent Browser Support: While most modern browsers support `<datalist>`, the appearance and behavior can be inconsistent across different browsers.
-
-
-#### Approach 2
-
-
-```
-<selectlist combobox>
-  <input type=selectlist>
-  <listbox>
-	<option>One</option>
-	<option>Two</option>
-  </listbox>
-</selectlist>
-```
-
-
-**Pros:**
-
-
-
-* Leveraging the existing `<selectlist>`
-
-**Cons:**
-
-
-
-* Need to rely on an opt-in attribute(`combobox`) to modify the behavior of `<selectlist>`.
-
-
-#### Approach 3 (Recommended)
-
-
 ```
 <combobox>
    <input type=selectlist>
@@ -162,7 +104,7 @@ A good analogy for what this document will result in looking like is the [Tabs r
 6. `<legend>` (Optional, within `<optgroup>`): Provides a label or title for a group of options within the `listbox`.
 
 
-##### Default Behavior
+#### Default Behavior
 
 Just like a regular dropdown, the <combobox> doesn't need much to get started. Here's how you can set it up with the basics:
 
@@ -256,6 +198,7 @@ The current behavior of `<selectlist>` is the _startswith_ value
 ![combo-search](https://github.com/sudheer-gowrigari/explainers/assets/11438997/c5132f5c-4d5b-484b-a147-f78fbf7c9cc4)
 
 
+
 ### Introduction of `multiple` attribute
 
 TBD
@@ -265,6 +208,63 @@ TBD
 
 TBD : [https://www.w3.org/WAI/ARIA/apg/patterns/combobox/](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/) 
 
+
+
 ## Research
 
 To keep this doc focused on the initial recommended approach, we've separated the research for parts and examples into another document that can be [found here](combobox-research.md)
+
+## Appendix
+### Explored Anatomy Options for ``<combobox>``
+#### Approach 1
+
+
+```
+<input type="text" list="browsers"  />
+<datalist id="browsers">
+	<option>firefox</option>
+	<option>Chrome</option>
+</datalist>
+```
+
+
+**Pros:**
+
+
+
+* Native elements
+
+**Cons:**
+
+
+
+* You can't achieve multi-select with `<datalist>`:
+* grouping options or adding icons next to options, the `<datalist>` approach falls short.
+* Inconsistent Browser Support: While most modern browsers support `<datalist>`, the appearance and behavior can be inconsistent across different browsers.
+
+
+#### Approach 2
+
+
+```
+<selectlist combobox>
+  <input type=selectlist>
+  <listbox>
+	<option>One</option>
+	<option>Two</option>
+  </listbox>
+</selectlist>
+```
+
+
+**Pros:**
+
+
+
+* Leveraging the existing `<selectlist>`
+
+**Cons:**
+
+
+
+* Need to rely on an opt-in attribute(`combobox`) to modify the behavior of `<selectlist>`.
