@@ -31,6 +31,11 @@ Recognizing these limitations, the [`<selectlist>`](https://open-ui.org/componen
 
 Right now, many websites have their own type of **'combobox'**, but they're all a bit different. We often see a mix of `<input>` fields and `<datalist>` elements trying to do the job, but it's not quite perfect. By creating a standard **`<combobox>`**, we're aiming to simplify things. 
 
+Further highlighting the need for such a solution, a recent [Twitter poll](https://twitter.com/openuicg/status/1717345237889351911) run by the Open UI Community Group underscored the widespread demand for a standardized ``combobox``
+
+<img width="613" alt="Screenshot 2023-10-31 at 2 54 37 PM" src="https://github.com/sudheer-gowrigari/explainers/assets/11438997/654587e9-8469-44cb-8a0e-9e4bf6e6ed0d">
+
+
 This proposal for `<combobox>` builds upon the strengths of `<selectlist>` and `<listbox>`. It aims to offer a control that is versatile for developers, intuitive for users, and, above all, accessible to all.
 
 By standardizing such elements, we hope to bridge the gap between design demands and the need for performant, reliable, and accessible web controls. 
