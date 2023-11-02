@@ -50,7 +50,7 @@
    <td><a href="https://tailwind-elements.com/docs/standard/forms/select/">Tailwind Elements</a>
    </td>
    <td>
-     <a href="https://www.carbondesignsystem.com/">Carbon Design System</a>
+     <a href="https://carbondesignsystem.com/components/dropdown/usage/#combo-box">Carbon Design System</a>
    </td>
     <td></td>
   </tr>
