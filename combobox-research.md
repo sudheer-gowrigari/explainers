@@ -18,9 +18,7 @@
    <td><a href="https://system.design.orange.com/0c1af118d/p/910b9b-dropdown/b/04c480">Boosted</a>
    </td>
    <td rowspan="7" >Bootstrap
-<p>
-<a href="https://www.carbondesignsystem.com/">Carbon Design System</a>
-<p>
+
 <a href="https://www.chromium.org/">Chromium</a> <a href="https://www.goodbarber.com/uxdesign/">GoodBarber Design System</a> 
 <p>
 <a href="https://public-ui.github.io/">KoliBri</a> 
@@ -52,7 +50,9 @@
    <td><a href="https://tailwind-elements.com/docs/standard/forms/select/">Tailwind Elements</a>
    </td>
    <td>
+     <a href="https://www.carbondesignsystem.com/">Carbon Design System</a>
    </td>
+    <td></td>
   </tr>
   <tr>
    <td><a href="https://www.lightningdesignsystem.com/components/combobox/#Base-Combobox">Lightning Design System</a>
